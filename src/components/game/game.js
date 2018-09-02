@@ -67,14 +67,11 @@ class game extends component {
             return newItem;
         });
 
-        correctClicks
-        ? this.correctClicks(newData);
-        : this.correctClicks(newData);
-    };
+        //correctedClick
 
     render() {
         return (
-            <div></div>
+            
         )
     }
 };
