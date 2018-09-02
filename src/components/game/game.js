@@ -54,24 +54,31 @@ class game extends component {
     };
 
     itemClicked = id => {
-        let correctClicks = false;
+        let correctGuess = false;
         const newData = this.state.data.map(item => {
             const newItem = {...item};
             if (newItem.id === id) {
                 if (!newItem.clicked) {
                     newItem.clicked = true;
-                    correctClicks = true;
+                    correctGuess = true;
                 };
             };
 
             return newItem;
         });
 
-        //correctedClick
+        correctedGuess
+            ? this.correctClicks(newData)
+            : this.correctClicks(newData);
+    }; 
 
     render() {
         return (
-            
-        )
-    }
+            <div>
+                <topNav />
+            </div>
+        );
+    };
 };
+
+export default game;
