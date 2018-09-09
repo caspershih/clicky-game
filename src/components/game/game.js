@@ -9,8 +9,8 @@ import data from "../../data.json";
 class game extends component {
     state = {
         data,
-        score = 0,
-        topScore = 0
+        score: 0,
+        topScore: 0
     };
 
     componentDidMount() {
@@ -75,7 +75,20 @@ class game extends component {
     render() {
         return (
             <div>
-                <topNav />
+                <topNav score={ this.state.score } topScore={ this.state.topScore }/>
+                <header />
+                <container>
+                    {this.state.data.map(item => (
+                        <itemClicked
+                            key={item.id}
+                            id={item.id}
+                            shake={!this.state.score && this.state.topScore}
+                            handleClick={this.handleClick}
+                            image={item.image}
+                    />
+                    ))}
+                </container>
+                <footer />
             </div>
         );
     };
