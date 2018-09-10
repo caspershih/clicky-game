@@ -1,5 +1,5 @@
 import React from "react";
-import navMessage from "";
+import scoreDisplay from "./scoreDisplay";
 import "./navbar.css";
 
 const nav = props => (
