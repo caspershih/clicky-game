@@ -16,8 +16,8 @@ class scoreDisplay extends component {
         } else {
             newState.message = "Excellent choice."
         }
-        this.setState(newStae, () =>
-            setTimeour(() => this.setState({ animating: false }), 500)
+        this.setState(newState, () =>
+            setTimeout(() => this.setState({ animating: false }), 500)
         );
     }
 
