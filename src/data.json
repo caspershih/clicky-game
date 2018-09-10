@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "image": "./assets/images/tyrael.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "./assets/images/diablo.jpg",
+        "clicked": false
+    }
+]

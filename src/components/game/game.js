@@ -20,10 +20,10 @@ class game extends component {
     correctClicks = newData => {
         const { topScore, score } = this.state;
         const updateScore = score + 1;
-        const updateTopScore = updateScore > topScore ? newScore : topScore;
+        const updateTopScore = updateScore > topScore ? updateScore : topScore;
         this.setState( {
             data: this.shuffleData(newData),
-            socre: newScore,
+            socre: updateScore,
             topScore: updateTopScore
         });
     };
@@ -43,7 +43,7 @@ class game extends component {
     shuffleData = Data => {
         let i = data.length - 1;
         while (i > 0) {
-            let j = math.floor(math.random() * (i + 1));
+            let j = Math.floor(Math.random() * (i + 1));
             let temp = data[i];
             data[i] = data[j];
             data[j] = temp;
@@ -67,7 +67,7 @@ class game extends component {
             return newItem;
         });
 
-        correctedGuess
+        correctGuess
             ? this.correctClicks(newData)
             : this.correctClicks(newData);
     }; 
