@@ -1,9 +1,9 @@
 import React from "react";
-import scoredisplay from "./scoreDisplay";
+import scoreDisplay from "./scoreDisplay";
 import "./navbar.css";
 
-const nav = props => (
-    <nav className="nav">
+const navbar = props => (
+    <nav className="navbar">
         <ul>
             <li className="simpleItems">
                 <a href="/">Blizzard Clicky Game</a>
@@ -15,4 +15,4 @@ const nav = props => (
     </nav>
 );
 
-export default nav;
+export default navbar;

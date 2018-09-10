@@ -4,6 +4,7 @@ import header from "../header";
 import container from "../container";
 import gameitem from "../gameitem";
 import footer from "../footer";
+import scoreDisplay from "./scoreDisplay";
 import data from "../../data.json";
 
 class game extends component {
