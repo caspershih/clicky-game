@@ -1,12 +1,12 @@
-import React, { component } from "react";
-import navbar from "../navbar";
-import header from "../header";
-import container from "../container";
-import gameitem from "../gameitem";
-import footer from "../footer";
+import React, { Component } from "react";
+import Navbar from "../Navbar";
+import Header from "../Header";
+import Container from "../Container";
+import Gameitem from "../Gameitem";
+import Footer from "../Footer";
 import data from "../../data.json";
 
-class game extends component {
+class Game extends Component {
     state = {
         data,
         score: 0,
@@ -79,11 +79,11 @@ class game extends component {
     render() {
         return (
             <div>
-                <navbar score={ this.state.score } topScore={ this.state.topScore }/>
-                <header />
-                <container>
+                <Navbar score={ this.state.score } topScore={ this.state.topScore }/>
+                <Header />
+                <Container>
                     {this.state.data.map(item => (
-                        <gameitem
+                        <Gameitem
                             key={item.id}
                             id={item.id}
                             shake={!this.state.score && this.state.topScore}
@@ -91,11 +91,11 @@ class game extends component {
                             image={item.image}
                     />
                     ))}
-                </container>
-                <footer />
+                </Container>
+                <Footer />
             </div>
         );
     };
 };
 
-export default game;
+export default Game;

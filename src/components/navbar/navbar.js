@@ -1,8 +1,8 @@
 import React from "react";
-import scoreDisplay from "../scoreDisplay/scoreDisplay";
-import "./navbar.css";
+import ScoreDisplay from "../ScoreDisplay";
+import "./Navbar.css";
 
-const navbar = props => (
+const Navbar = props => (
     <nav className="navbar">
         <ul>
             <li className="simpleItems">
@@ -15,4 +15,4 @@ const navbar = props => (
     </nav>
 );
 
-export default navbar;
+export default Navbar;

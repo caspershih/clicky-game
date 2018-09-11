@@ -1,7 +1,7 @@
-import React, { component } from "react";
-import "./scoreDisplay.css";
+import React, { Component } from "react";
+import "./ScoreDisplay.css";
 
-class scoreDisplay extends component {
+class ScoreDisplay extends Component {
     state = {
         message: "",
         animating: false
@@ -32,4 +32,4 @@ class scoreDisplay extends component {
     }
 }
 
-export default scoreDisplay;
+export default ScoreDisplay;

@@ -1,6 +1,6 @@
 import React from "react";
-import "./container.css";
+import "./Container.css";
 
-const container = props => <main className="container" >{ props.children} </main>
+const Container = props => <main className="Container" >{ props.children} </main>
 
-export default container;
+export default Container;

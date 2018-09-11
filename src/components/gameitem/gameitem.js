@@ -1,7 +1,7 @@
 import React from "react";
-import "./gameitem.css";
+import "./Gameitem.css";
 
-const gameitem = props => (
+const Gameitem = props => (
     <div 
         role = "img"
         aria-label = "game item"
@@ -9,4 +9,4 @@ const gameitem = props => (
     />
 );
 
-export default gameitem;
+export default Gameitem;
