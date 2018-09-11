@@ -4,7 +4,7 @@ import "./Gameitem.css";
 const Gameitem = props => (
     <div 
         role = "img"
-        aria-label = "game item"
+        aria-label = "Game item"
         onClick = { () => props.handleClick(props.id) }
     />
 );
