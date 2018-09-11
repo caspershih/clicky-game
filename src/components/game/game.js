@@ -4,7 +4,7 @@ import header from "../header";
 import container from "../container";
 import gameitem from "../gameitem";
 import footer from "../footer";
-import scoreDisplay from "../scoreDisplay";
+
 import data from "../../data.json";
 
 class game extends component {
@@ -76,11 +76,11 @@ class game extends component {
     render() {
         return (
             <div>
-                <topNav score={ this.state.score } topScore={ this.state.topScore }/>
+                <navbar score={ this.state.score } topScore={ this.state.topScore }/>
                 <header />
                 <container>
                     {this.state.data.map(item => (
-                        <itemClicked
+                        <gameitem
                             key={item.id}
                             id={item.id}
                             shake={!this.state.score && this.state.topScore}
