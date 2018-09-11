@@ -4,7 +4,6 @@ import header from "../header";
 import container from "../container";
 import gameitem from "../gameitem";
 import footer from "../footer";
-
 import data from "../../data.json";
 
 class game extends component {
@@ -18,6 +17,7 @@ class game extends component {
         this.setState({ data: this.shuffleData(this.state.data) });
     }
 
+    // Function when players play it right
     correctClicks = newData => {
         const { topScore, score } = this.state;
         const updateScore = score + 1;
@@ -29,6 +29,7 @@ class game extends component {
         });
     };
 
+    // Function when players play it wrong
     incorrectClicks = data => {
         this.setState( {
             data: this.resetData(data),
@@ -41,6 +42,7 @@ class game extends component {
         return this.shuffleData(resetData);
     };
 
+    // After each click, randomly shuffle the portraits
     shuffleData = Data => {
         let i = data.length - 1;
         while (i > 0) {
@@ -73,6 +75,7 @@ class game extends component {
             : this.correctClicks(newData);
     }; 
 
+    // Finally, render the score displays on navbar
     render() {
         return (
             <div>

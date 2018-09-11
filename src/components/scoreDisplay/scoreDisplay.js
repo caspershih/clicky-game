@@ -7,6 +7,7 @@ class scoreDisplay extends component {
         animating: false
     };
 
+    // show scores when players got it right, and when they make a mistake
     componentWillReceiveProps( {score, topScore} ) {
         const newState = { animating: true };
         if (score === 0 && topScore === 0) {
@@ -21,6 +22,7 @@ class scoreDisplay extends component {
         );
     }
 
+    // Render the score message on navbar
     render() {
         return (
             <li className="this.state.animating ? this.state.message : ">
