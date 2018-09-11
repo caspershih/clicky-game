@@ -22,6 +22,17 @@ class ScoreDisplay extends Component {
         );
     }
 
+    renderMessage = () => {
+        switch (this.state.message) {
+            case "correct":
+                return "You chose a hero."
+            case "incorrect":
+                return "You may not choose this hero again."
+            default:
+                return "Click the portrait of a hero to start."
+        };
+    };
+
     // Render the score message on navbar
     render() {
         return (
@@ -29,7 +40,7 @@ class ScoreDisplay extends Component {
                 {this.renderMessage()}
             </li>
         );
-    }
-}
+    };
+};
 
 export default ScoreDisplay;

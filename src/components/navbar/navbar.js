@@ -9,7 +9,7 @@ const Navbar = props => (
                 <a href="/">Blizzard Clicky Game</a>
             </li>
             <li>
-                <scoreDisplay score = {props.score} topScore = {props.topScore} />
+                <ScoreDisplay score = {props.score} topScore = {props.topScore} />
             </li>
         </ul>
     </nav>
