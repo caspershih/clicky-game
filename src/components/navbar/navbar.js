@@ -1,9 +1,9 @@
 import React from "react";
-import ScoreDisplay from "../ScoreDisplay";
+import ScoreDisplay from "./ScoreDisplay";
 import "./Navbar.css";
 
 const Navbar = props => (
-    <nav className="navbar">
+    <nav className="Navbar">
         <ul>
             <li className="simpleItems">
                 <a href="/">Blizzard Clicky Game</a>
