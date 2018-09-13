@@ -4,8 +4,10 @@ import "./Gameitem.css";
 const Gameitem = props => (
     <div 
         role = "img"
-        aria-label = "Game item"
-        onClick = { () => props.handleClick(props.id) }
+        aria-label = "Gameitem"
+        onClick = {() => props.handleClick(props.id)}
+        style={{ backgroundImage: `url("${props.image}")` }}
+    className={`Gameitem${props.shake ? " shake" : ""}`}
     />
 );
 

@@ -1,4 +1,4 @@
-.click-item {
+.Gameitem {
     background-size: cover;
     background-position: center;
     height: 170px;
@@ -10,7 +10,7 @@
     cursor: pointer;
   }
   
-  .click-item:hover {
+  .Gameitem:hover {
     transform: scale(1.05);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     transition: 0.1s;
