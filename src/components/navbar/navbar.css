@@ -1,4 +1,4 @@
-.navbar {
+.Navbar {
     background: rgb(8, 53, 131);
     min-height: 70px;
     position: fixed;
@@ -9,34 +9,34 @@
     white-space: nowrap;
   }
   
-  .navbar ul {
+  .Navbar ul {
     margin: 0;
     padding: 0;
   }
   
-  .navbar li {
+  .Navbar li {
     display: inline-block;
     padding: 26px 0px;
     width: 33.3%;
     text-align: center;
   }
   
-  .navbar a {
+  .Navbar a {
     text-decoration: none;
     color: white;
     font-weight: 900;
   }
   
   @media (max-width: 420px) {
-    .navbar li:first-child {
+    .Navbar li:first-child {
       width: 25%;
     }
   
-    .navbar li:nth-child(2) {
+    .Navbar li:nth-child(2) {
       width: 35%;
     }
   
-    .navbar li:last-child {
+    .Navbar li:last-child {
       width: 40%;
     }
   }
