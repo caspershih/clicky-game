@@ -13,6 +13,7 @@ class Game extends Component {
         topScore: 0
     };
 
+    // Loading data from a remote endpoint
     componentDidMount() {
         this.setState({ data: this.shuffleData(this.state.data) });
     }
@@ -43,7 +44,7 @@ class Game extends Component {
     };
 
     // After each click, randomly shuffle the portraits
-    shuffleData = Data => {
+    shuffleData = data => {
         let i = data.length - 1;
         while (i > 0) {
             let j = Math.floor(Math.random() * (i + 1));
