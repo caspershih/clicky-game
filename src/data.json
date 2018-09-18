@@ -1,47 +1,47 @@
 [
     {
         "id": 1,
-        "image": "/assets/images/Artanis.jpg",
+        "image": "/assets/Artanis.jpg",
         "clicked": false
     },
     {
         "id": 2,
-        "image": "/assets/images/Arthas.jpg",
+        "image": "/assets/Arthas.jpg",
         "clicked": false
     },
     {
         "id": 3,
-        "image": "/assets/images/Diablo.jpg",
+        "image": "/assets/Diablo.jpg",
         "clicked": false
     },
     {
         "id": 4,
-        "image": "/assets/images/Greymane.jpg",
+        "image": "/assets/Greymane.jpg",
         "clicked": false
     },
     {
         "id": 5,
-        "image": "/assets/images/Kerrigan.jpg",
+        "image": "/assets/Kerrigan.jpg",
         "clicked": false
     },
     {
         "id": 6,
-        "image": "/assets/images/Mathael.jpg",
+        "image": "/assets/Mathael.jpg",
         "clicked": false
     },
     {
         "id": 7,
-        "image": "/assets/images/Raynor.jpg",
+        "image": "/assets/Raynor.jpg",
         "clicked": false
     },
     {
         "id": 8,
-        "image": "/assets/images/Thrall.jpg",
+        "image": "/assets/Thrall.jpg",
         "clicked": false
     },
     {
         "id": 9,
-        "image": "/assets/images/Tyrael.jpg",
+        "image": "/assets/Tyrael.jpg",
         "clicked": false
     }
 ]
