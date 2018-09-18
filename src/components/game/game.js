@@ -19,25 +19,26 @@ class Game extends Component {
     }
 
     // Function when players play it right
-    correctClicks = newData => {
+    correctClick = newData => {
         const { topScore, score } = this.state;
         const updateScore = score + 1;
         const updateTopScore = updateScore > topScore ? updateScore : topScore;
         this.setState( {
             data: this.shuffleData(newData),
-            socre: updateScore,
+            score: updateScore,
             topScore: updateTopScore
         });
     };
 
     // Function when players play it wrong
-    incorrectClicks = data => {
+    incorrectClick = data => {
         this.setState( {
             data: this.resetData(data),
             score: 0
         });
     };
 
+    // After incorrect click, reset the game
     resetData = data => {
         const resetData = data.map(item => ({ ...item, clicked: false}));
         return this.shuffleData(resetData);
@@ -47,8 +48,8 @@ class Game extends Component {
     shuffleData = data => {
         let i = data.length - 1;
         while (i > 0) {
-            let j = Math.floor(Math.random() * (i + 1));
-            let temp = data[i];
+            const j = Math.floor(Math.random() * (i + 1));
+            const temp = data[i];
             data[i] = data[j];
             data[j] = temp;
             i--;
@@ -72,8 +73,8 @@ class Game extends Component {
         });
 
         correctGuess
-            ? this.correctClicks(newData)
-            : this.correctClicks(newData);
+            ? this.correctClick(newData)
+            : this.incorrectClick(newData);
     }; 
 
     // Finally, render the score displays on navbar
@@ -88,7 +89,7 @@ class Game extends Component {
                             key={item.id}
                             id={item.id}
                             shake={!this.state.score && this.state.topScore}
-                            handleClick={this.itemClick}
+                            handleClick={this.itemClicked}
                             image={item.image}
                     />
                     ))}

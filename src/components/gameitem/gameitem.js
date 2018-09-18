@@ -3,11 +3,11 @@ import "./Gameitem.css";
 
 const Gameitem = props => (
     <div 
+        className={`Gameitem${props.shake ? " shake" : ""}`}
         role = "img"
         aria-label = "Game item"
-        onClick = {() => props.itemClick(props.id)}
+        onClick = {() => props.itemClicked(props.id)}
         style={{ backgroundImage: `url("${props.image}")` }}
-        className={`Gameitem${props.shake ? " shake" : ""}`}
     />
 );
 
