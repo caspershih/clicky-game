@@ -6,7 +6,7 @@ const Gameitem = props => (
         className={`Gameitem${props.shake ? " shake" : ""}`}
         role = "img"
         aria-label = "Game item"
-        onClick = {() => props.itemClicked(props.id)}
+        onClick = {() => props.handleClick(props.id)}
         style={{ backgroundImage: `url("${props.image}")` }}
     />
 );
